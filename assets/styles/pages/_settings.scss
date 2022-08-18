@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(../../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../../fonts/Merriweather-Light.ttf);
+}
+
+$color1:white;
+$color2:rgb(236, 236, 236);
+$color3:rgb(14, 14, 14);
+
+
+body {
+  background: url(../../images/bg.jpg) fixed center/cover;
+  color: $color3;
+  font-family: font1;
+  min-height: 100vh;
+}
