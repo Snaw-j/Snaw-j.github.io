@@ -1,0 +1,36 @@
+.header-page {
+  padding-top: 95px;
+  position: relative;
+  .background-container {
+    height: 675px;
+    @media screen and (min-width: 770px) {
+      height: 850px;
+    }
+
+    .img-background {
+      background: url(../../img/pexels-mike-klokov-12365929.jpeg) center left;
+      height: 100%;
+      width: 100%;
+      @media screen and (min-width: 1440px) {
+        background: url(../../img/pexels-mike-klokov-12365929.jpeg) center/cover;
+      }
+    }
+    .background-text {
+      position: absolute;
+      left: 25px;
+      bottom: 30px;
+      text-shadow: 3px 2px 2px rgb(212 162 56 / 84%);
+      font-size: 0.9rem;
+    }
+
+    @media screen and (min-width: 770px) {
+      height: 850px;
+      .background-text {
+        position: absolute;
+        left: 65vw;
+        bottom: 55px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

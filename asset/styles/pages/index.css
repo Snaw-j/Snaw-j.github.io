@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: whitesmoke;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(../../font/mont/Montserrat-VariableFont_wght.ttf);
+}
+body {
+  color: rgb(15, 15, 15);
+  font-family: font1;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #151515;
+  color: whitesmoke;
+  padding: 0 15px;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #000, rgba(22, 22, 22, 0));
+  z-index: 11;
+  width: 100%;
+}
+header .header-wrapp {
+  padding-top: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-wrapp #Name-Shop {
+  width: 50%;
+}
+header .header-wrapp #Name-Shop h1 {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 770px) {
+  header .header-wrapp #Name-Shop h1 {
+    font-size: 2rem;
+  }
+}
+header .header-wrapp .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-wrapp .navigation #menu {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 770px) {
+  header .header-wrapp .navigation #menu {
+    font-size: 1rem;
+  }
+}
+header .header-wrapp .navigation #menu ul {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+}
+header .header-wrapp .navigation #menu ul li {
+  padding-left: 7px;
+}
+
+.header-page {
+  padding-top: 95px;
+  position: relative;
+}
+.header-page .background-container {
+  height: 675px;
+}
+@media screen and (min-width: 770px) {
+  .header-page .background-container {
+    height: 850px;
+  }
+}
+.header-page .background-container .img-background {
+  background: url(../../img/pexels-mike-klokov-12365929.jpeg) center left;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .header-page .background-container .img-background {
+    background: url(../../img/pexels-mike-klokov-12365929.jpeg) center/cover;
+  }
+}
+.header-page .background-container .background-text {
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+  text-shadow: 3px 2px 2px rgba(212, 162, 56, 0.84);
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 770px) {
+  .header-page .background-container {
+    height: 850px;
+  }
+  .header-page .background-container .background-text {
+    position: absolute;
+    left: 65vw;
+    bottom: 55px;
+    font-size: 1.1rem;
+  }
+}
+
+.Showroom-cars {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 25px;
+  margin: 40px 0;
+}
+.Showroom-cars .box-showroom .img-showroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Showroom-cars .box-showroom .img-showroom img {
+  height: 300px;
+}
+@media screen and (min-width: 960px) {
+  .Showroom-cars .box-showroom .img-showroom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.Showroom-cars .box-showroom .text-contain {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media screen and (min-width: 960px) {
+  .Showroom-cars .box-showroom {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-items: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Showroom-cars {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.text-wrapp {
+  padding: 10px 5vw;
+}
+.text-wrapp h3 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  font-size: 1rem;
+}
+.text-wrapp p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 770px) {
+  .text-wrapp {
+    padding: 10px 12vw;
+  }
+  .text-wrapp h3 {
+    font-size: 1.17rem;
+  }
+  .text-wrapp p {
+    font-size: 1rem;
+  }
+}
+footer {
+  bottom: 0;
+  margin: 0 auto;
+}
+footer .container-footer {
+  margin: 15px;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+}
+footer .container-footer h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+footer .container-footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 960px) {
+  footer {
+    width: 45%;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  footer .container-footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=index.css.map */

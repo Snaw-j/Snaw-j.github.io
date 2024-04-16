@@ -1,0 +1,26 @@
+.text-wrapp {
+  padding: 10px 5vw;
+  h3 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-size: 1rem;
+  }
+  p {
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 770px) {
+  .text-wrapp {
+    padding: 10px 12vw;
+    h3 {
+      font-size: 1.17rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}

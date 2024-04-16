@@ -1,0 +1,42 @@
+.Showroom-cars {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 25px;
+  margin: 40px 0;
+  .box-showroom {
+    .img-showroom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: 300px;
+      }
+      @media screen and (min-width: 960px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .text-contain {
+      margin-top: 25px;
+      margin-bottom: 5px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    @media screen and (min-width: 960px) {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      // display: flex;
+      width: 100%;
+      justify-items: center;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    display: flex;
+    width: 100%;
+  }
+}

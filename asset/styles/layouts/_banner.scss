@@ -1,0 +1,51 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, #000, rgba(22, 22, 22, 0));
+  z-index: 11;
+  width: 100%;
+
+  .header-wrapp {
+    padding-top: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 10px;
+    #Name-Shop {
+      width: 50%;
+      h1 {
+        font-size: 1.2rem;
+      }
+      @media screen and (min-width: 770px) {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      #menu {
+        font-size: 0.8rem;
+        @media screen and (min-width: 770px) {
+          font-size: 1rem;
+        }
+        ul {
+          display: flex;
+          align-items: flex-start;
+          text-align: center;
+          li {
+            padding-left: 7px;
+          }
+        }
+      }
+    }
+  }
+}
