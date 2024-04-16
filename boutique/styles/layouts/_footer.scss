@@ -1,0 +1,15 @@
+footer {
+  background: whitesmoke;
+  height: 40px;
+  margin: 15px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: font2;
+
+  .footer-container {
+    color: black;
+  }
+}
